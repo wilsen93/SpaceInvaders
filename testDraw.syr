@@ -1,0 +1,1767 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: testDraw.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testDraw.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testDraw"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : testDraw
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\ipcore_dir\clk_divider.v" into library work
+Parsing module <clk_divider>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\SPImode0.v" into library work
+Parsing module <spiMode0>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\spiCtrl.v" into library work
+Parsing module <spiCtrl>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\ClkDiv_66_67kHz.v" into library work
+Parsing module <ClkDiv_66_67kHz>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\bulletcollision.v" into library work
+Parsing module <bulletcollision>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\vga_controller.v" into library work
+Parsing module <vga_controller>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\PmodJSTK.v" into library work
+Parsing module <PmodJSTK>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\parseJoystick.v" into library work
+Parsing module <parseJoystick>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\map.v" into library work
+Parsing module <map>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\clock_divider.v" into library work
+Parsing module <clock_divider>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\ClkDiv_5Hz.v" into library work
+Parsing module <ClkDiv_5Hz>.
+Analyzing Verilog file "C:\Users\152\Desktop\spaceivaders\testDraw.v" into library work
+Parsing module <testDraw>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 95: Port RST is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 106: Port RST is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 119: Port RST is not connected to this instance
+
+Elaborating module <testDraw>.
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 39: Using initial value of clear since it is never assigned
+
+Elaborating module <PmodJSTK>.
+
+Elaborating module <spiCtrl>.
+
+Elaborating module <spiMode0>.
+
+Elaborating module <ClkDiv_66_67kHz>.
+
+Elaborating module <ClkDiv_5Hz>.
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 133: Assignment to posData ignored, since the identifier is never used
+
+Elaborating module <clk_divider>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLK_FEEDBACK="CLKFBOUT",COMPENSATION="SYSTEM_SYNCHRONOUS",DIVCLK_DIVIDE=1,CLKFBOUT_MULT=4,CLKFBOUT_PHASE=0.0,CLKOUT0_DIVIDE=10,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DIVIDE=4,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DIVIDE=80,CLKOUT2_PHASE=0.0,CLKOUT2_DUTY_CYCLE=0.5,CLKIN_PERIOD=10.0,REF_JITTER=0.01)>.
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\spaceivaders\ipcore_dir\clk_divider.v" Line 124: Assignment to clkout3_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\spaceivaders\ipcore_dir\clk_divider.v" Line 125: Assignment to clkout4_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\spaceivaders\ipcore_dir\clk_divider.v" Line 126: Assignment to clkout5_unused ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\spaceivaders\ipcore_dir\clk_divider.v" Line 127: Assignment to locked_unused ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 138: Assignment to clk_js ignored, since the identifier is never used
+
+Elaborating module <vga_controller>.
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 33: Using initial value of totalHorizontalPixels since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 34: Using initial value of horizontalSyncPulse since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 35: Using initial value of totalVerticalLines since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 36: Using initial value of verticalSyncPulse since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 42: Using initial value of RightHorizontalOffset since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 43: Using initial value of LeftHorizontalOffset since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 44: Using initial value of TopVerticalOffset since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\vga_controller.v" Line 45: Using initial value of BottomVerticalOffset since it is never assigned
+
+Elaborating module <map>.
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 42: Using initial value of leftX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 43: Using initial value of rightX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 44: Using initial value of topY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 45: Using initial value of bottomY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 47: Using initial value of upleftX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 48: Using initial value of uprightX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 49: Using initial value of uptopY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 50: Using initial value of upbottomY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 52: Using initial value of hpleftX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 53: Using initial value of hprightX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 54: Using initial value of hptopY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 55: Using initial value of hpbottomY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 57: Using initial value of timeleftX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 58: Using initial value of timerightX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 59: Using initial value of timetopY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 60: Using initial value of timebottomY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 62: Using initial value of timerleftX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 63: Using initial value of timerrightX since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 64: Using initial value of timertopY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 65: Using initial value of timerbottomY since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 87: Using initial value of wall2 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 88: Using initial value of wall1 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 90: Using initial value of wall3 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 91: Using initial value of wall5 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 93: Using initial value of wall6 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 94: Using initial value of wall4 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 96: Using initial value of wall7 since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 113: Using initial value of halflength since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 114: Using initial value of legs since it is never assigned
+
+Elaborating module <bulletcollision>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 283: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 284: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 289: Result of 13-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 290: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 297: Result of 13-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 298: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 303: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 304: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 313: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 314: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 319: Result of 13-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 320: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 327: Result of 13-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 328: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 333: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 334: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\spaceivaders\map.v" Line 1075: Result of 10-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <parseJoystick>.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\parseJoystick.v" Line 39: Signal <xPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\parseJoystick.v" Line 40: Signal <yPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\parseJoystick.v" Line 44: Signal <yPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\parseJoystick.v" Line 46: Signal <yPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\parseJoystick.v" Line 48: Signal <xPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\parseJoystick.v" Line 50: Signal <xPos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <clock_divider>.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 147: Signal <draw> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 148: Signal <mapred> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 149: Signal <mapgreen> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 150: Signal <mapblue> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 70: Net <sndData[7]> does not have a driver.
+WARNING:HDLCompiler:552 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 95: Input port RST is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 106: Input port RST is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" Line 119: Input port RST is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <testDraw>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\testDraw.v".
+WARNING:Xst:2898 - Port 'RST', unconnected in block instance 'PmodJSTK_Int1', is tied to GND.
+WARNING:Xst:2898 - Port 'RST', unconnected in block instance 'PmodJSTK_Int2', is tied to GND.
+WARNING:Xst:2898 - Port 'RST', unconnected in block instance 'genSndRec', is tied to GND.
+WARNING:Xst:647 - Input <SW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\152\Desktop\spaceivaders\testDraw.v" line 138: Output port <CLK_JOYSTICK> of the instance <clockdiv> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <sndData> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <testDraw> synthesized.
+
+Synthesizing Unit <PmodJSTK>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\PmodJSTK.v".
+    Summary:
+	no macro.
+Unit <PmodJSTK> synthesized.
+
+Synthesizing Unit <spiCtrl>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\spiCtrl.v".
+        Idle = 3'b000
+        Init = 3'b001
+        Wait = 3'b010
+        Check = 3'b011
+        Done = 3'b100
+        byteEndVal = 3'b101
+    Found 1-bit register for signal <getByte>.
+    Found 8-bit register for signal <sndData>.
+    Found 40-bit register for signal <tmpSR>.
+    Found 40-bit register for signal <DOUT>.
+    Found 3-bit register for signal <byteCnt>.
+    Found 3-bit register for signal <pState>.
+    Found 1-bit register for signal <SS>.
+    Found finite state machine <FSM_0> for signal <pState>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | CLK (falling_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <byteCnt[2]_GND_3_o_add_5_OUT> created at line 130.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  93 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <spiCtrl> synthesized.
+
+Synthesizing Unit <spiMode0>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\SPImode0.v".
+        Idle = 2'b00
+        Init = 2'b01
+        RxTx = 2'b10
+        Done = 2'b11
+    Found 8-bit register for signal <rSR>.
+    Found 1-bit register for signal <CE>.
+    Found 1-bit register for signal <BUSY>.
+    Found 5-bit register for signal <bitCount>.
+    Found 2-bit register for signal <pState>.
+    Found 8-bit register for signal <wSR>.
+    Found finite state machine <FSM_1> for signal <pState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (falling_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <bitCount[4]_GND_4_o_add_20_OUT> created at line 219.
+    Found 5-bit comparator greater for signal <GND_4_o_INV_8_o> created at line 222
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <spiMode0> synthesized.
+
+Synthesizing Unit <ClkDiv_66_67kHz>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\ClkDiv_66_67kHz.v".
+        cntEndVal = 10'b1011101110
+    Found 10-bit register for signal <clkCount>.
+    Found 1-bit register for signal <CLKOUT>.
+    Found 10-bit adder for signal <clkCount[9]_GND_5_o_add_3_OUT> created at line 67.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ClkDiv_66_67kHz> synthesized.
+
+Synthesizing Unit <ClkDiv_5Hz>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\ClkDiv_5Hz.v".
+        cntEndVal = 24'b100110001001011010000000
+    Found 24-bit register for signal <clkCount>.
+    Found 1-bit register for signal <CLKOUT>.
+    Found 24-bit adder for signal <clkCount[23]_GND_6_o_add_3_OUT> created at line 67.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <ClkDiv_5Hz> synthesized.
+
+Synthesizing Unit <clk_divider>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\ipcore_dir\clk_divider.v".
+    Summary:
+	no macro.
+Unit <clk_divider> synthesized.
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\vga_controller.v".
+    Found 11-bit register for signal <verticalCounter>.
+    Found 1-bit register for signal <draw>.
+    Found 11-bit register for signal <pixelx>.
+    Found 11-bit register for signal <pixely>.
+    Found 11-bit register for signal <horizontalCounter>.
+    Found 11-bit subtractor for signal <horizontalCounter[10]_GND_11_o_sub_15_OUT> created at line 67.
+    Found 11-bit subtractor for signal <verticalCounter[10]_GND_11_o_sub_16_OUT> created at line 68.
+    Found 11-bit adder for signal <verticalCounter[10]_GND_11_o_add_2_OUT> created at line 54.
+    Found 11-bit adder for signal <horizontalCounter[10]_GND_11_o_add_3_OUT> created at line 56.
+    Found 11-bit comparator greater for signal <GND_11_o_horizontalCounter[10]_LessThan_11_o> created at line 64
+    Found 11-bit comparator greater for signal <horizontalCounter[10]_GND_11_o_LessThan_12_o> created at line 64
+    Found 11-bit comparator greater for signal <GND_11_o_verticalCounter[10]_LessThan_13_o> created at line 65
+    Found 11-bit comparator greater for signal <verticalCounter[10]_GND_11_o_LessThan_14_o> created at line 65
+    Found 11-bit comparator greater for signal <hsync> created at line 78
+    Found 11-bit comparator greater for signal <vsync> created at line 84
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller> synthesized.
+
+Synthesizing Unit <map>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\map.v".
+    Found 1-bit register for signal <resetclock>.
+    Found 1-bit register for signal <updatePlayer>.
+    Found 1-bit register for signal <fire1bool>.
+    Found 44-bit register for signal <bullet1>.
+    Found 3-bit register for signal <bulletdir1>.
+    Found 1-bit register for signal <fire2bool>.
+    Found 44-bit register for signal <bullet2>.
+    Found 3-bit register for signal <bulletdir2>.
+    Found 2-bit register for signal <p1health>.
+    Found 2-bit register for signal <p2health>.
+    Found 11-bit register for signal <player1leftX>.
+    Found 11-bit register for signal <player1rightX>.
+    Found 11-bit register for signal <player1topY>.
+    Found 11-bit register for signal <player1bottomY>.
+    Found 3-bit register for signal <face1>.
+    Found 11-bit register for signal <player2leftX>.
+    Found 11-bit register for signal <player2rightX>.
+    Found 11-bit register for signal <player2topY>.
+    Found 11-bit register for signal <player2bottomY>.
+    Found 3-bit register for signal <face2>.
+    Found 3-bit register for signal <ghostpicked>.
+    Found 44-bit register for signal <n1363[43:0]>.
+    Found 44-bit register for signal <n1362[43:0]>.
+    Found 44-bit register for signal <n1364[43:0]>.
+    Found 11-bit register for signal <p1bulletspeed>.
+    Found 11-bit register for signal <p2bulletspeed>.
+    Found 3-bit register for signal <red>.
+    Found 3-bit register for signal <green>.
+    Found 2-bit register for signal <blue>.
+    Found 4-bit register for signal <seconds>.
+    Found 4-bit register for signal <tenSeconds>.
+    Found 1-bit register for signal <hasSwap>.
+    Found 12-bit subtractor for signal <GND_12_o_GND_12_o_sub_16_OUT> created at line 284.
+    Found 11-bit subtractor for signal <player1rightX[10]_GND_12_o_sub_24_OUT> created at line 291.
+    Found 11-bit subtractor for signal <player1bottomY[10]_GND_12_o_sub_33_OUT> created at line 301.
+    Found 12-bit subtractor for signal <GND_12_o_GND_12_o_sub_36_OUT> created at line 304.
+    Found 12-bit subtractor for signal <GND_12_o_GND_12_o_sub_50_OUT> created at line 314.
+    Found 11-bit subtractor for signal <player2rightX[10]_GND_12_o_sub_58_OUT> created at line 321.
+    Found 11-bit subtractor for signal <player2bottomY[10]_GND_12_o_sub_67_OUT> created at line 331.
+    Found 12-bit subtractor for signal <GND_12_o_GND_12_o_sub_70_OUT> created at line 334.
+    Found 2-bit subtractor for signal <p1health[1]_GND_12_o_sub_82_OUT> created at line 340.
+    Found 2-bit subtractor for signal <p2health[1]_GND_12_o_sub_83_OUT> created at line 347.
+    Found 11-bit subtractor for signal <player1topY[10]_GND_12_o_sub_224_OUT> created at line 560.
+    Found 11-bit subtractor for signal <player1bottomY[10]_GND_12_o_sub_225_OUT> created at line 561.
+    Found 11-bit subtractor for signal <player1rightX[10]_GND_12_o_sub_228_OUT> created at line 563.
+    Found 11-bit subtractor for signal <player1leftX[10]_GND_12_o_sub_229_OUT> created at line 564.
+    Found 11-bit subtractor for signal <player2topY[10]_GND_12_o_sub_312_OUT> created at line 605.
+    Found 11-bit subtractor for signal <player2bottomY[10]_GND_12_o_sub_313_OUT> created at line 606.
+    Found 11-bit subtractor for signal <player2rightX[10]_GND_12_o_sub_316_OUT> created at line 608.
+    Found 11-bit subtractor for signal <player2leftX[10]_GND_12_o_sub_317_OUT> created at line 609.
+    Found 11-bit subtractor for signal <player1bullets[2][10]_p1bulletspeed[10]_sub_342_OUT> created at line 618.
+    Found 11-bit subtractor for signal <player1bullets[3][10]_p1bulletspeed[10]_sub_343_OUT> created at line 619.
+    Found 11-bit subtractor for signal <player1bullets[1][10]_p1bulletspeed[10]_sub_363_OUT> created at line 651.
+    Found 11-bit subtractor for signal <player1bullets[0][10]_p1bulletspeed[10]_sub_364_OUT> created at line 652.
+    Found 11-bit subtractor for signal <player2bullets[2][10]_p2bulletspeed[10]_sub_370_OUT> created at line 664.
+    Found 11-bit subtractor for signal <player2bullets[3][10]_p2bulletspeed[10]_sub_371_OUT> created at line 665.
+    Found 11-bit subtractor for signal <player2bullets[1][10]_p2bulletspeed[10]_sub_391_OUT> created at line 697.
+    Found 11-bit subtractor for signal <player2bullets[0][10]_p2bulletspeed[10]_sub_392_OUT> created at line 698.
+    Found 11-bit subtractor for signal <player1bottomY[10]_GND_12_o_sub_453_OUT> created at line 814.
+    Found 11-bit subtractor for signal <player1rightX[10]_GND_12_o_sub_458_OUT> created at line 820.
+    Found 11-bit subtractor for signal <player1rightX[10]_GND_12_o_sub_473_OUT> created at line 833.
+    Found 11-bit subtractor for signal <player1bottomY[10]_GND_12_o_sub_477_OUT> created at line 834.
+    Found 11-bit subtractor for signal <player2bottomY[10]_GND_12_o_sub_497_OUT> created at line 849.
+    Found 11-bit subtractor for signal <player2rightX[10]_GND_12_o_sub_502_OUT> created at line 855.
+    Found 11-bit subtractor for signal <player2rightX[10]_GND_12_o_sub_517_OUT> created at line 868.
+    Found 11-bit subtractor for signal <player2bottomY[10]_GND_12_o_sub_521_OUT> created at line 869.
+    Found 11-bit adder for signal <player1bottomY[10]_GND_12_o_add_22_OUT> created at line 290.
+    Found 11-bit adder for signal <player1leftX[10]_GND_12_o_add_24_OUT> created at line 292.
+    Found 11-bit adder for signal <player1rightX[10]_GND_12_o_add_30_OUT> created at line 298.
+    Found 11-bit adder for signal <player1topY[10]_GND_12_o_add_33_OUT> created at line 302.
+    Found 11-bit adder for signal <player2bottomY[10]_GND_12_o_add_56_OUT> created at line 320.
+    Found 11-bit adder for signal <player2leftX[10]_GND_12_o_add_58_OUT> created at line 322.
+    Found 11-bit adder for signal <player2rightX[10]_GND_12_o_add_64_OUT> created at line 328.
+    Found 11-bit adder for signal <player2topY[10]_GND_12_o_add_67_OUT> created at line 332.
+    Found 2-bit adder for signal <p1health[1]_GND_12_o_add_148_OUT> created at line 499.
+    Found 2-bit adder for signal <p2health[1]_GND_12_o_add_149_OUT> created at line 501.
+    Found 11-bit adder for signal <player1topY[10]_GND_12_o_add_219_OUT> created at line 557.
+    Found 11-bit adder for signal <player1leftX[10]_GND_12_o_add_232_OUT> created at line 567.
+    Found 11-bit adder for signal <player2topY[10]_GND_12_o_add_307_OUT> created at line 602.
+    Found 11-bit adder for signal <player2leftX[10]_GND_12_o_add_320_OUT> created at line 612.
+    Found 11-bit adder for signal <player1bullets[2][10]_p1bulletspeed[10]_add_347_OUT> created at line 629.
+    Found 11-bit adder for signal <player1bullets[3][10]_p1bulletspeed[10]_add_348_OUT> created at line 630.
+    Found 11-bit adder for signal <player1bullets[1][10]_p1bulletspeed[10]_add_355_OUT> created at line 640.
+    Found 11-bit adder for signal <player1bullets[0][10]_p1bulletspeed[10]_add_356_OUT> created at line 641.
+    Found 11-bit adder for signal <player2bullets[2][10]_p2bulletspeed[10]_add_375_OUT> created at line 675.
+    Found 11-bit adder for signal <player2bullets[3][10]_p2bulletspeed[10]_add_376_OUT> created at line 676.
+    Found 11-bit adder for signal <player2bullets[1][10]_p2bulletspeed[10]_add_383_OUT> created at line 686.
+    Found 11-bit adder for signal <player2bullets[0][10]_p2bulletspeed[10]_add_384_OUT> created at line 687.
+    Found 11-bit adder for signal <player1leftX[10]_GND_12_o_add_455_OUT> created at line 820.
+    Found 11-bit adder for signal <player1topY[10]_GND_12_o_add_459_OUT> created at line 821.
+    Found 11-bit adder for signal <player1leftX[10]_GND_12_o_add_463_OUT> created at line 827.
+    Found 11-bit adder for signal <player1topY[10]_GND_12_o_add_474_OUT> created at line 834.
+    Found 11-bit adder for signal <player2leftX[10]_GND_12_o_add_499_OUT> created at line 855.
+    Found 11-bit adder for signal <player2topY[10]_GND_12_o_add_503_OUT> created at line 856.
+    Found 11-bit adder for signal <player2leftX[10]_GND_12_o_add_507_OUT> created at line 862.
+    Found 11-bit adder for signal <player2topY[10]_GND_12_o_add_518_OUT> created at line 869.
+    Found 11-bit subtractor for signal <GND_12_o_GND_12_o_sub_17_OUT<10:0>> created at line 284.
+    Found 11-bit subtractor for signal <GND_12_o_GND_12_o_sub_37_OUT<10:0>> created at line 304.
+    Found 11-bit subtractor for signal <GND_12_o_GND_12_o_sub_51_OUT<10:0>> created at line 314.
+    Found 11-bit subtractor for signal <GND_12_o_GND_12_o_sub_71_OUT<10:0>> created at line 334.
+    Found 12-bit adder for signal <n1411> created at line 327.
+    Found 12-bit adder for signal <n1385> created at line 297.
+    Found 12-bit adder for signal <n1380> created at line 289.
+    Found 12-bit adder for signal <n1406> created at line 319.
+    Found 44-bit 7-to-1 multiplexer for signal <player1bullets[3][10]_GND_12_o_mux_43_OUT> created at line 288.
+    Found 44-bit 7-to-1 multiplexer for signal <player2bullets[3][10]_GND_12_o_mux_77_OUT> created at line 318.
+    Found 3-bit 7-to-1 multiplexer for signal <_n2186> created at line 1123.
+    Found 3-bit 7-to-1 multiplexer for signal <_n2188> created at line 1123.
+    Found 2-bit 7-to-1 multiplexer for signal <_n2190> created at line 1123.
+    Found 3-bit 12-to-1 multiplexer for signal <GND_12_o_GND_12_o_mux_1208_OUT> created at line 1178.
+    Found 3-bit 12-to-1 multiplexer for signal <GND_12_o_GND_12_o_mux_1209_OUT> created at line 1178.
+    Found 2-bit 12-to-1 multiplexer for signal <GND_12_o_GND_12_o_mux_1210_OUT> created at line 1178.
+    Found 11-bit comparator lessequal for signal <n0008> created at line 270
+    Found 11-bit comparator lessequal for signal <n0010> created at line 270
+    Found 11-bit comparator lessequal for signal <n0013> created at line 271
+    Found 11-bit comparator lessequal for signal <n0016> created at line 271
+    Found 11-bit comparator greater for signal <GND_12_o_player1topY[10]_LessThan_167_o> created at line 529
+    Found 11-bit comparator greater for signal <player1bottomY[10]_GND_12_o_LessThan_175_o> created at line 536
+    Found 11-bit comparator greater for signal <player1rightX[10]_GND_12_o_LessThan_183_o> created at line 542
+    Found 11-bit comparator greater for signal <GND_12_o_player1leftX[10]_LessThan_191_o> created at line 549
+    Found 11-bit comparator greater for signal <GND_12_o_player2topY[10]_LessThan_255_o> created at line 575
+    Found 11-bit comparator greater for signal <player2bottomY[10]_GND_12_o_LessThan_263_o> created at line 582
+    Found 11-bit comparator greater for signal <player2rightX[10]_GND_12_o_LessThan_271_o> created at line 588
+    Found 11-bit comparator greater for signal <GND_12_o_player2leftX[10]_LessThan_279_o> created at line 594
+    Found 11-bit comparator greater for signal <GND_12_o_player1bullets[2][10]_LessThan_341_o> created at line 617
+    Found 11-bit comparator greater for signal <player1bullets[3][10]_GND_12_o_LessThan_347_o> created at line 628
+    Found 11-bit comparator greater for signal <player1bullets[1][10]_GND_12_o_LessThan_355_o> created at line 639
+    Found 11-bit comparator lessequal for signal <GND_12_o_player1bullets[0][10]_LessThan_362_o> created at line 650
+    Found 11-bit comparator greater for signal <GND_12_o_player2bullets[2][10]_LessThan_369_o> created at line 663
+    Found 11-bit comparator greater for signal <player2bullets[3][10]_GND_12_o_LessThan_375_o> created at line 674
+    Found 11-bit comparator greater for signal <player2bullets[1][10]_GND_12_o_LessThan_383_o> created at line 685
+    Found 11-bit comparator lessequal for signal <GND_12_o_player2bullets[0][10]_LessThan_390_o> created at line 696
+    Found 11-bit comparator lessequal for signal <n0449> created at line 709
+    Found 11-bit comparator lessequal for signal <n0451> created at line 709
+    Found 11-bit comparator lessequal for signal <n0454> created at line 710
+    Found 11-bit comparator lessequal for signal <n0457> created at line 710
+    Found 11-bit comparator lessequal for signal <n0460> created at line 716
+    Found 11-bit comparator lessequal for signal <n0462> created at line 716
+    Found 11-bit comparator lessequal for signal <n0465> created at line 717
+    Found 11-bit comparator lessequal for signal <n0468> created at line 717
+    Found 11-bit comparator lessequal for signal <n0471> created at line 725
+    Found 11-bit comparator lessequal for signal <n0473> created at line 725
+    Found 11-bit comparator lessequal for signal <n0476> created at line 726
+    Found 11-bit comparator lessequal for signal <n0479> created at line 726
+    Found 11-bit comparator lessequal for signal <n0482> created at line 734
+    Found 11-bit comparator lessequal for signal <n0484> created at line 734
+    Found 11-bit comparator lessequal for signal <n0487> created at line 735
+    Found 11-bit comparator lessequal for signal <n0490> created at line 735
+    Found 11-bit comparator lessequal for signal <n0497> created at line 758
+    Found 11-bit comparator lessequal for signal <n0499> created at line 758
+    Found 11-bit comparator lessequal for signal <n0502> created at line 759
+    Found 11-bit comparator lessequal for signal <n0505> created at line 759
+    Found 11-bit comparator lessequal for signal <n0508> created at line 766
+    Found 11-bit comparator lessequal for signal <n0510> created at line 766
+    Found 11-bit comparator lessequal for signal <n0513> created at line 767
+    Found 11-bit comparator lessequal for signal <n0516> created at line 767
+    Found 11-bit comparator lessequal for signal <n0519> created at line 774
+    Found 11-bit comparator lessequal for signal <n0521> created at line 774
+    Found 11-bit comparator lessequal for signal <n0526> created at line 782
+    Found 11-bit comparator lessequal for signal <n0528> created at line 782
+    Found 11-bit comparator lessequal for signal <n0531> created at line 783
+    Found 11-bit comparator lessequal for signal <n0534> created at line 783
+    Found 11-bit comparator lessequal for signal <n0537> created at line 790
+    Found 11-bit comparator lessequal for signal <n0539> created at line 790
+    Found 11-bit comparator lessequal for signal <n0542> created at line 791
+    Found 11-bit comparator lessequal for signal <n0545> created at line 791
+    Found 11-bit comparator lessequal for signal <n0548> created at line 798
+    Found 11-bit comparator lessequal for signal <n0550> created at line 798
+    Found 11-bit comparator lessequal for signal <n0553> created at line 799
+    Found 11-bit comparator lessequal for signal <n0556> created at line 799
+    Found 11-bit comparator lessequal for signal <n0563> created at line 814
+    Found 11-bit comparator lessequal for signal <n0567> created at line 814
+    Found 11-bit comparator lessequal for signal <n0573> created at line 820
+    Found 11-bit comparator lessequal for signal <n0576> created at line 820
+    Found 11-bit comparator lessequal for signal <n0580> created at line 821
+    Found 11-bit comparator lessequal for signal <n0583> created at line 821
+    Found 11-bit comparator lessequal for signal <n0589> created at line 827
+    Found 11-bit comparator lessequal for signal <n0591> created at line 827
+    Found 11-bit comparator lessequal for signal <n0598> created at line 833
+    Found 11-bit comparator lessequal for signal <n0601> created at line 833
+    Found 11-bit comparator lessequal for signal <n0605> created at line 834
+    Found 11-bit comparator lessequal for signal <n0609> created at line 834
+    Found 11-bit comparator lessequal for signal <n0621> created at line 849
+    Found 11-bit comparator lessequal for signal <n0625> created at line 849
+    Found 11-bit comparator lessequal for signal <n0631> created at line 855
+    Found 11-bit comparator lessequal for signal <n0634> created at line 855
+    Found 11-bit comparator lessequal for signal <n0638> created at line 856
+    Found 11-bit comparator lessequal for signal <n0641> created at line 856
+    Found 11-bit comparator lessequal for signal <n0647> created at line 862
+    Found 11-bit comparator lessequal for signal <n0649> created at line 862
+    Found 11-bit comparator lessequal for signal <n0656> created at line 868
+    Found 11-bit comparator lessequal for signal <n0659> created at line 868
+    Found 11-bit comparator lessequal for signal <n0663> created at line 869
+    Found 11-bit comparator lessequal for signal <n0667> created at line 869
+    Found 11-bit comparator lessequal for signal <n0750> created at line 889
+    Found 11-bit comparator lessequal for signal <n0752> created at line 889
+    Found 11-bit comparator lessequal for signal <n0756> created at line 890
+    Found 11-bit comparator lessequal for signal <n0759> created at line 892
+    Found 11-bit comparator lessequal for signal <n0761> created at line 892
+    Found 11-bit comparator lessequal for signal <n0764> created at line 893
+    Found 11-bit comparator lessequal for signal <n0767> created at line 897
+    Found 11-bit comparator lessequal for signal <n0769> created at line 897
+    Found 11-bit comparator lessequal for signal <n0772> created at line 901
+    Found 11-bit comparator lessequal for signal <n0774> created at line 901
+    Found 11-bit comparator lessequal for signal <n0776> created at line 901
+    Found 11-bit comparator lessequal for signal <n0780> created at line 902
+    Found 11-bit comparator lessequal for signal <n0782> created at line 902
+    Found 11-bit comparator lessequal for signal <n0785> created at line 902
+    Found 11-bit comparator lessequal for signal <n0790> created at line 906
+    Found 11-bit comparator lessequal for signal <n0800> created at line 916
+    Found 11-bit comparator lessequal for signal <n0802> created at line 916
+    Found 11-bit comparator lessequal for signal <n0805> created at line 916
+    Found 11-bit comparator lessequal for signal <n0808> created at line 917
+    Found 11-bit comparator lessequal for signal <n0810> created at line 917
+    Found 11-bit comparator lessequal for signal <n0813> created at line 917
+    Found 11-bit comparator lessequal for signal <n0820> created at line 929
+    Found 11-bit comparator lessequal for signal <n0832> created at line 937
+    Found 11-bit comparator lessequal for signal <n0834> created at line 937
+    Found 11-bit comparator lessequal for signal <n0846> created at line 945
+    Found 11-bit comparator lessequal for signal <n0848> created at line 945
+    Found 11-bit comparator lessequal for signal <n0859> created at line 952
+    Found 11-bit comparator lessequal for signal <n0862> created at line 952
+    Found 11-bit comparator lessequal for signal <n0865> created at line 953
+    Found 11-bit comparator lessequal for signal <n0903> created at line 992
+    Found 11-bit comparator lessequal for signal <n0905> created at line 992
+    Found 11-bit comparator lessequal for signal <n0910> created at line 995
+    Found 11-bit comparator lessequal for signal <n0912> created at line 995
+    Found 11-bit comparator lessequal for signal <n0917> created at line 1000
+    Found 11-bit comparator lessequal for signal <n0919> created at line 1000
+    Found 11-bit comparator lessequal for signal <n0922> created at line 1004
+    Found 11-bit comparator lessequal for signal <n0924> created at line 1004
+    Found 11-bit comparator lessequal for signal <n0935> created at line 1019
+    Found 11-bit comparator lessequal for signal <n0939> created at line 1020
+    Found 11-bit comparator lessequal for signal <n0941> created at line 1020
+    Found 11-bit comparator lessequal for signal <n0949> created at line 1032
+    Found 11-bit comparator lessequal for signal <n0954> created at line 1033
+    Found 11-bit comparator lessequal for signal <n0956> created at line 1033
+    Found 11-bit comparator lessequal for signal <n0988> created at line 1078
+    Found 11-bit comparator lessequal for signal <n0991> created at line 1078
+    Found 11-bit comparator lessequal for signal <n0994> created at line 1080
+    Found 11-bit comparator lessequal for signal <n0996> created at line 1080
+    Found 11-bit comparator lessequal for signal <n1001> created at line 1081
+    Found 11-bit comparator lessequal for signal <n1005> created at line 1085
+    Found 11-bit comparator lessequal for signal <n1010> created at line 1086
+    Found 11-bit comparator lessequal for signal <n1014> created at line 1090
+    Found 11-bit comparator lessequal for signal <n1018> created at line 1091
+    Found 11-bit comparator lessequal for signal <n1023> created at line 1095
+    Found 11-bit comparator lessequal for signal <n1025> created at line 1095
+    Found 11-bit comparator lessequal for signal <n1028> created at line 1099
+    Found 11-bit comparator lessequal for signal <n1030> created at line 1099
+    Found 11-bit comparator lessequal for signal <n1033> created at line 1099
+    Found 11-bit comparator lessequal for signal <n1036> created at line 1099
+    Found 11-bit comparator lessequal for signal <n1039> created at line 1100
+    Found 11-bit comparator lessequal for signal <n1041> created at line 1100
+    Found 11-bit comparator lessequal for signal <n1060> created at line 1112
+    Found 11-bit comparator lessequal for signal <n1076> created at line 1124
+    Found 11-bit comparator lessequal for signal <n1081> created at line 1126
+    Found 11-bit comparator lessequal for signal <n1084> created at line 1126
+    Found 11-bit comparator lessequal for signal <n1088> created at line 1127
+    Found 11-bit comparator lessequal for signal <n1104> created at line 1143
+    Found 11-bit comparator lessequal for signal <n1109> created at line 1144
+    Found 11-bit comparator lessequal for signal <n1113> created at line 1145
+    Found 11-bit comparator lessequal for signal <n1116> created at line 1145
+    Found 11-bit comparator lessequal for signal <n1125> created at line 1152
+    Found 11-bit comparator lessequal for signal <n1133> created at line 1158
+    Found 11-bit comparator lessequal for signal <n1136> created at line 1158
+    Found 11-bit comparator lessequal for signal <n1139> created at line 1159
+    Found 11-bit comparator lessequal for signal <n1142> created at line 1159
+    Found 11-bit comparator lessequal for signal <n1150> created at line 1161
+    Found 11-bit comparator lessequal for signal <n1257> created at line 1251
+    Found 11-bit comparator lessequal for signal <n1263> created at line 1252
+    Summary:
+	inferred  72 Adder/Subtractor(s).
+	inferred 370 D-type flip-flop(s).
+	inferred 159 Comparator(s).
+	inferred 460 Multiplexer(s).
+Unit <map> synthesized.
+
+Synthesizing Unit <bulletcollision>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\bulletcollision.v".
+    Found 11-bit comparator equal for signal <bullet[43]_topy[10]_equal_1_o> created at line 43
+    Found 11-bit comparator equal for signal <bullet[32]_bottomy[10]_equal_4_o> created at line 45
+    Found 11-bit comparator equal for signal <bullet[21]_leftx[10]_equal_7_o> created at line 47
+    Found 11-bit comparator equal for signal <bullet[10]_rightx[10]_equal_10_o> created at line 49
+    Found 11-bit comparator lessequal for signal <n0012> created at line 51
+    Found 11-bit comparator lessequal for signal <n0014> created at line 51
+    Found 11-bit comparator lessequal for signal <n0017> created at line 51
+    Found 11-bit comparator lessequal for signal <n0020> created at line 51
+    Summary:
+	inferred   8 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <bulletcollision> synthesized.
+
+Synthesizing Unit <mod_10u_4u>.
+    Related source file is "".
+    Found 14-bit adder for signal <GND_14_o_b[3]_add_1_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_14_o_b[3]_add_3_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_14_o_b[3]_add_5_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_14_o_b[3]_add_7_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[3]_add_9_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_14_o_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_14_o_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_14_o_add_15_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_14_o_add_17_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_14_o_add_19_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_14_o_add_21_OUT> created at line 0.
+    Found 14-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred 101 Multiplexer(s).
+Unit <mod_10u_4u> synthesized.
+
+Synthesizing Unit <div_10u_4u>.
+    Related source file is "".
+    Found 14-bit adder for signal <GND_15_o_b[3]_add_1_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_15_o_b[3]_add_3_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_15_o_b[3]_add_5_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_15_o_b[3]_add_7_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_b[3]_add_9_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_15_o_add_11_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_15_o_add_13_OUT> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_15_o_add_15_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_15_o_add_17_OUT[9:0]> created at line 0.
+    Found 10-bit adder for signal <a[9]_GND_15_o_add_19_OUT[9:0]> created at line 0.
+    Found 14-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 13-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 12-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred  73 Multiplexer(s).
+Unit <div_10u_4u> synthesized.
+
+Synthesizing Unit <parseJoystick>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\parseJoystick.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <direction<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <direction<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <direction<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 10-bit comparator greater for signal <n0000> created at line 39
+    Found 10-bit comparator greater for signal <n0002> created at line 39
+    Found 10-bit comparator greater for signal <n0005> created at line 40
+    Found 10-bit comparator greater for signal <n0008> created at line 40
+    Found 10-bit comparator greater for signal <GND_16_o_xPos[9]_LessThan_6_o> created at line 44
+    Found 10-bit comparator greater for signal <xPos[9]_PWR_20_o_LessThan_7_o> created at line 44
+    Found 10-bit comparator greater for signal <GND_16_o_yPos[9]_LessThan_12_o> created at line 48
+    Found 10-bit comparator greater for signal <yPos[9]_PWR_20_o_LessThan_13_o> created at line 48
+    Summary:
+	inferred   3 Latch(s).
+	inferred   8 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <parseJoystick> synthesized.
+
+Synthesizing Unit <clock_divider>.
+    Related source file is "C:\Users\152\Desktop\spaceivaders\clock_divider.v".
+    Found 27-bit register for signal <dividerSec>.
+    Found 10-bit register for signal <second>.
+    Found 10-bit subtractor for signal <second[9]_GND_20_o_sub_4_OUT> created at line 39.
+    Found 27-bit adder for signal <dividerSec[26]_GND_20_o_add_9_OUT> created at line 44.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <clock_divider> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 106
+ 10-bit adder                                          : 15
+ 10-bit subtractor                                     : 1
+ 11-bit adder                                          : 32
+ 11-bit subtractor                                     : 34
+ 12-bit adder                                          : 6
+ 12-bit subtractor                                     : 4
+ 13-bit adder                                          : 2
+ 14-bit adder                                          : 2
+ 2-bit adder                                           : 2
+ 2-bit subtractor                                      : 2
+ 24-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 5-bit adder                                           : 2
+# Registers                                            : 67
+ 1-bit register                                        : 17
+ 10-bit register                                       : 3
+ 11-bit register                                       : 14
+ 2-bit register                                        : 3
+ 24-bit register                                       : 1
+ 27-bit register                                       : 1
+ 3-bit register                                        : 9
+ 4-bit register                                        : 2
+ 40-bit register                                       : 4
+ 44-bit register                                       : 5
+ 5-bit register                                        : 2
+ 8-bit register                                        : 6
+# Latches                                              : 6
+ 1-bit latch                                           : 6
+# Comparators                                          : 501
+ 10-bit comparator greater                             : 16
+ 10-bit comparator lessequal                           : 14
+ 11-bit comparator equal                               : 148
+ 11-bit comparator greater                             : 20
+ 11-bit comparator lessequal                           : 295
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 823
+ 1-bit 2-to-1 multiplexer                              : 400
+ 10-bit 2-to-1 multiplexer                             : 7
+ 11-bit 2-to-1 multiplexer                             : 139
+ 2-bit 12-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 84
+ 2-bit 7-to-1 multiplexer                              : 1
+ 27-bit 2-to-1 multiplexer                             : 2
+ 3-bit 12-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 147
+ 3-bit 7-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 40-bit 2-to-1 multiplexer                             : 2
+ 44-bit 2-to-1 multiplexer                             : 25
+ 44-bit 7-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <powerspeed_0_0> in Unit <drawMap> is equivalent to the following 28 FFs/Latches, which will be removed : <powerspeed_0_3> <powerspeed_0_5> <powerspeed_0_6> <powerspeed_0_8> <powerspeed_0_9> <powerspeed_0_10> <powerspeed_0_12> <powerspeed_0_14> <powerspeed_0_15> <powerspeed_0_17> <powerspeed_0_19> <powerspeed_0_20> <powerspeed_0_21> <powerspeed_0_22> <powerspeed_0_23> <powerspeed_0_25> <powerspeed_0_26> <powerspeed_0_28> <powerspeed_0_29> <powerspeed_0_31> <powerspeed_0_32> <powerspeed_0_33> <powerspeed_0_34> <powerspeed_0_36> <powerspeed_0_39> <powerspeed_0_40> <powerspeed_0_42> <powerspeed_0_43> 
+INFO:Xst:2261 - The FF/Latch <powerghost_0_0> in Unit <drawMap> is equivalent to the following 25 FFs/Latches, which will be removed : <powerghost_0_3> <powerghost_0_4> <powerghost_0_8> <powerghost_0_9> <powerghost_0_10> <powerghost_0_12> <powerghost_0_14> <powerghost_0_19> <powerghost_0_20> <powerghost_0_21> <powerghost_0_22> <powerghost_0_23> <powerghost_0_25> <powerghost_0_26> <powerghost_0_28> <powerghost_0_29> <powerghost_0_31> <powerghost_0_32> <powerghost_0_33> <powerghost_0_34> <powerghost_0_36> <powerghost_0_39> <powerghost_0_40> <powerghost_0_42> <powerghost_0_43> 
+INFO:Xst:2261 - The FF/Latch <powerhealth_0_2> in Unit <drawMap> is equivalent to the following 26 FFs/Latches, which will be removed : <powerhealth_0_4> <powerhealth_0_6> <powerhealth_0_7> <powerhealth_0_8> <powerhealth_0_10> <powerhealth_0_11> <powerhealth_0_13> <powerhealth_0_17> <powerhealth_0_18> <powerhealth_0_19> <powerhealth_0_21> <powerhealth_0_22> <powerhealth_0_23> <powerhealth_0_25> <powerhealth_0_26> <powerhealth_0_28> <powerhealth_0_29> <powerhealth_0_31> <powerhealth_0_32> <powerhealth_0_33> <powerhealth_0_34> <powerhealth_0_36> <powerhealth_0_39> <powerhealth_0_40> <powerhealth_0_42> <powerhealth_0_43> 
+INFO:Xst:2261 - The FF/Latch <powerspeed_0_1> in Unit <drawMap> is equivalent to the following 14 FFs/Latches, which will be removed : <powerspeed_0_2> <powerspeed_0_4> <powerspeed_0_7> <powerspeed_0_11> <powerspeed_0_13> <powerspeed_0_16> <powerspeed_0_18> <powerspeed_0_24> <powerspeed_0_27> <powerspeed_0_30> <powerspeed_0_35> <powerspeed_0_37> <powerspeed_0_38> <powerspeed_0_41> 
+INFO:Xst:2261 - The FF/Latch <powerghost_0_1> in Unit <drawMap> is equivalent to the following 17 FFs/Latches, which will be removed : <powerghost_0_2> <powerghost_0_5> <powerghost_0_6> <powerghost_0_7> <powerghost_0_11> <powerghost_0_13> <powerghost_0_15> <powerghost_0_16> <powerghost_0_17> <powerghost_0_18> <powerghost_0_24> <powerghost_0_27> <powerghost_0_30> <powerghost_0_35> <powerghost_0_37> <powerghost_0_38> <powerghost_0_41> 
+INFO:Xst:2261 - The FF/Latch <powerhealth_0_0> in Unit <drawMap> is equivalent to the following 16 FFs/Latches, which will be removed : <powerhealth_0_1> <powerhealth_0_3> <powerhealth_0_5> <powerhealth_0_9> <powerhealth_0_12> <powerhealth_0_14> <powerhealth_0_15> <powerhealth_0_16> <powerhealth_0_20> <powerhealth_0_24> <powerhealth_0_27> <powerhealth_0_30> <powerhealth_0_35> <powerhealth_0_37> <powerhealth_0_38> <powerhealth_0_41> 
+WARNING:Xst:1293 - FF/Latch <powerghost_0_0> has a constant value of 0 in block <drawMap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <powerhealth_0_2> has a constant value of 0 in block <drawMap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <powerspeed_0_0> has a constant value of 0 in block <drawMap>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DOUT_0> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_2> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_3> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_4> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_5> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_6> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_7> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_10> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_11> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_12> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_13> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_14> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_15> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_26> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_27> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_28> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_29> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_30> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_31> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_0> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_2> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_3> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_4> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_5> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_6> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_7> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_10> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_11> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_12> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_13> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_14> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_15> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_26> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_27> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_28> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_29> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_30> of sequential type is unconnected in block <SPI_Ctrl>.
+WARNING:Xst:2677 - Node <DOUT_31> of sequential type is unconnected in block <SPI_Ctrl>.
+
+Synthesizing (advanced) Unit <ClkDiv_5Hz>.
+The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
+Unit <ClkDiv_5Hz> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ClkDiv_66_67kHz>.
+The following registers are absorbed into counter <clkCount>: 1 register on signal <clkCount>.
+Unit <ClkDiv_66_67kHz> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spiCtrl>.
+The following registers are absorbed into counter <byteCnt>: 1 register on signal <byteCnt>.
+Unit <spiCtrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spiMode0>.
+The following registers are absorbed into counter <bitCount>: 1 register on signal <bitCount>.
+Unit <spiMode0> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_controller>.
+The following registers are absorbed into counter <horizontalCounter>: 1 register on signal <horizontalCounter>.
+The following registers are absorbed into counter <verticalCounter>: 1 register on signal <verticalCounter>.
+Unit <vga_controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 93
+ 10-bit adder                                          : 20
+ 10-bit subtractor                                     : 1
+ 11-bit adder                                          : 32
+ 11-bit subtractor                                     : 30
+ 11-bit subtractor borrow in                           : 4
+ 2-bit adder                                           : 2
+ 2-bit subtractor                                      : 2
+ 27-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 9
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 2
+ 24-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 5-bit up counter                                      : 2
+# Registers                                            : 649
+ Flip-Flops                                            : 649
+# Comparators                                          : 501
+ 10-bit comparator greater                             : 16
+ 10-bit comparator lessequal                           : 14
+ 11-bit comparator equal                               : 148
+ 11-bit comparator greater                             : 20
+ 11-bit comparator lessequal                           : 295
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator lessequal                           : 2
+ 14-bit comparator lessequal                           : 2
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 817
+ 1-bit 2-to-1 multiplexer                              : 400
+ 10-bit 2-to-1 multiplexer                             : 5
+ 11-bit 2-to-1 multiplexer                             : 139
+ 2-bit 12-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 84
+ 2-bit 7-to-1 multiplexer                              : 1
+ 27-bit 2-to-1 multiplexer                             : 2
+ 3-bit 12-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 145
+ 3-bit 7-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 1
+ 40-bit 2-to-1 multiplexer                             : 2
+ 44-bit 2-to-1 multiplexer                             : 25
+ 44-bit 7-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <powerspeed_0_12> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_10> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_9> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_8> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_6> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_5> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_3> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_0> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_43> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_42> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_40> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_39> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_36> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_34> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_33> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_32> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_31> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_29> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_28> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_26> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_43> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_42> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_40> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_39> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_36> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_34> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_33> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_32> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_31> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_29> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_28> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_26> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_25> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_23> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_22> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_21> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_20> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_19> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_17> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_15> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerspeed_0_14> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_33> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_32> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_31> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_29> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_28> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_26> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_25> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_23> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_22> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_21> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_20> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_19> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_14> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_12> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_10> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_9> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_8> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_4> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_3> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_0> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_25> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_23> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_22> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_21> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_19> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_18> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_17> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_13> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_11> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_10> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_8> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_7> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_6> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_4> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerhealth_0_2> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_43> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_42> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_40> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_39> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_36> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <powerghost_0_34> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <powerspeed_0_1> in Unit <map> is equivalent to the following 14 FFs/Latches, which will be removed : <powerspeed_0_2> <powerspeed_0_4> <powerspeed_0_7> <powerspeed_0_11> <powerspeed_0_13> <powerspeed_0_16> <powerspeed_0_18> <powerspeed_0_24> <powerspeed_0_27> <powerspeed_0_30> <powerspeed_0_35> <powerspeed_0_37> <powerspeed_0_38> <powerspeed_0_41> 
+INFO:Xst:2261 - The FF/Latch <powerghost_0_1> in Unit <map> is equivalent to the following 17 FFs/Latches, which will be removed : <powerghost_0_2> <powerghost_0_5> <powerghost_0_6> <powerghost_0_7> <powerghost_0_11> <powerghost_0_13> <powerghost_0_15> <powerghost_0_16> <powerghost_0_17> <powerghost_0_18> <powerghost_0_24> <powerghost_0_27> <powerghost_0_30> <powerghost_0_35> <powerghost_0_37> <powerghost_0_38> <powerghost_0_41> 
+INFO:Xst:2261 - The FF/Latch <powerhealth_0_0> in Unit <map> is equivalent to the following 16 FFs/Latches, which will be removed : <powerhealth_0_1> <powerhealth_0_3> <powerhealth_0_5> <powerhealth_0_9> <powerhealth_0_12> <powerhealth_0_14> <powerhealth_0_15> <powerhealth_0_16> <powerhealth_0_20> <powerhealth_0_24> <powerhealth_0_27> <powerhealth_0_30> <powerhealth_0_35> <powerhealth_0_37> <powerhealth_0_38> <powerhealth_0_41> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <PmodJSTK_Int2/SPI_Ctrl/FSM_0> on signal <pState[1:3]> with user encoding.
+Optimizing FSM <PmodJSTK_Int1/SPI_Ctrl/FSM_0> on signal <pState[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <PmodJSTK_Int2/SPI_Int/FSM_1> on signal <pState[1:2]> with user encoding.
+Optimizing FSM <PmodJSTK_Int1/SPI_Int/FSM_1> on signal <pState[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+WARNING:Xst:1293 - FF/Latch <p2bulletspeed_10> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_9> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_8> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_7> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_6> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_5> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_4> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_3> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p2bulletspeed_0> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_10> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_9> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_8> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_7> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_6> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_5> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_4> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_3> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <p1bulletspeed_0> has a constant value of 0 in block <map>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance clockdiv/pll_base_inst in unit clockdiv/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    direction_2 in unit <parseJoystick>
+    direction_0 in unit <parseJoystick>
+    direction_1 in unit <parseJoystick>
+
+
+Optimizing unit <testDraw> ...
+
+Optimizing unit <map> ...
+
+Optimizing unit <spiCtrl> ...
+
+Optimizing unit <spiMode0> ...
+
+Optimizing unit <vga_controller> ...
+
+Optimizing unit <parseJoystick> ...
+
+Optimizing unit <clock_divider> ...
+WARNING:Xst:1293 - FF/Latch <second_9> has a constant value of 0 in block <clock_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <second_8> has a constant value of 0 in block <clock_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <second_7> has a constant value of 0 in block <clock_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <second_6> has a constant value of 0 in block <clock_divider>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_0> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_1> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_2> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_3> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_4> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_5> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_6> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Int/wSR_7> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_0> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_1> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_2> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_3> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_4> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_5> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_6> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Int/wSR_7> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <drawMap/tenSeconds_3> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_7> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_6> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_5> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_4> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_3> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_2> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_1> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int1/SPI_Ctrl/sndData_0> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_7> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_6> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_5> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_4> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_3> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_2> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_1> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PmodJSTK_Int2/SPI_Ctrl/sndData_0> has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_31> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_30> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_29> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_28> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_27> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_26> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_15> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_14> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_13> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_12> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_11> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_10> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_7> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_6> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_5> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_4> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_3> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_2> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int1/SPI_Ctrl/DOUT_0> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_31> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_30> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_29> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_28> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_27> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_26> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_15> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_14> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_13> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_12> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_11> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_10> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_7> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_6> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_5> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_4> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_3> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_2> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:2677 - Node <PmodJSTK_Int2/SPI_Ctrl/DOUT_0> of sequential type is unconnected in block <testDraw>.
+WARNING:Xst:1710 - FF/Latch <vga/pixely_10> (without init value) has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vga/pixelx_10> (without init value) has a constant value of 0 in block <testDraw>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <drawMap/player1topY_0> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player1bottomY_0> 
+INFO:Xst:2261 - The FF/Latch <drawMap/player2bullets_0_11> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player2bullets_0_0> 
+INFO:Xst:2261 - The FF/Latch <drawMap/player2leftX_0> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player2rightX_0> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int1/SerialClock/CLKOUT> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int2/SerialClock/CLKOUT> 
+INFO:Xst:2261 - The FF/Latch <drawMap/player2bullets_0_33> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player2bullets_0_22> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_0> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_0> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_1> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_1> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_2> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_2> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_3> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_3> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_4> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_4> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_5> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_5> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_6> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_6> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_7> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_7> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_8> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_8> 
+INFO:Xst:2261 - The FF/Latch <PmodJSTK_Int2/SerialClock/clkCount_9> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <PmodJSTK_Int1/SerialClock/clkCount_9> 
+INFO:Xst:2261 - The FF/Latch <drawMap/player1leftX_0> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player1rightX_0> 
+INFO:Xst:2261 - The FF/Latch <drawMap/player1bullets_0_11> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player1bullets_0_0> 
+INFO:Xst:2261 - The FF/Latch <drawMap/player1bullets_0_33> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player1bullets_0_22> 
+INFO:Xst:2261 - The FF/Latch <drawMap/ghostpicked_0> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/powerghost_0_1> 
+INFO:Xst:2261 - The FF/Latch <drawMap/player2topY_0> in Unit <testDraw> is equivalent to the following FF/Latch, which will be removed : <drawMap/player2bottomY_0> 
+INFO:Xst:3203 - The FF/Latch <drawMap/player2topY_1> in Unit <testDraw> is the opposite to the following FF/Latch, which will be removed : <drawMap/player2bottomY_1> 
+INFO:Xst:3203 - The FF/Latch <drawMap/player1topY_1> in Unit <testDraw> is the opposite to the following FF/Latch, which will be removed : <drawMap/player1bottomY_1> 
+INFO:Xst:3203 - The FF/Latch <drawMap/player2leftX_1> in Unit <testDraw> is the opposite to the following FF/Latch, which will be removed : <drawMap/player2rightX_1> 
+INFO:Xst:3203 - The FF/Latch <drawMap/player1leftX_1> in Unit <testDraw> is the opposite to the following FF/Latch, which will be removed : <drawMap/player1rightX_1> 
+INFO:Xst:3203 - The FF/Latch <drawMap/p1bulletspeed_2> in Unit <testDraw> is the opposite to the following FF/Latch, which will be removed : <drawMap/p1bulletspeed_1> 
+INFO:Xst:3203 - The FF/Latch <drawMap/p2bulletspeed_2> in Unit <testDraw> is the opposite to the following FF/Latch, which will be removed : <drawMap/p2bulletspeed_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block testDraw, actual ratio is 39.
+FlipFlop drawMap/player1bottomY_10 has been replicated 1 time(s)
+FlipFlop drawMap/player1bottomY_2 has been replicated 2 time(s)
+FlipFlop drawMap/player1bottomY_3 has been replicated 2 time(s)
+FlipFlop drawMap/player1bottomY_4 has been replicated 2 time(s)
+FlipFlop drawMap/player1bottomY_5 has been replicated 2 time(s)
+FlipFlop drawMap/player1bottomY_6 has been replicated 2 time(s)
+FlipFlop drawMap/player1bottomY_7 has been replicated 2 time(s)
+FlipFlop drawMap/player1bottomY_8 has been replicated 2 time(s)
+FlipFlop drawMap/player1bottomY_9 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_0 has been replicated 2 time(s)
+FlipFlop drawMap/player1leftX_1 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_10 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_2 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_4 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_5 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_7 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_8 has been replicated 1 time(s)
+FlipFlop drawMap/player1leftX_9 has been replicated 1 time(s)
+FlipFlop drawMap/player1rightX_2 has been replicated 1 time(s)
+FlipFlop drawMap/player1rightX_4 has been replicated 1 time(s)
+FlipFlop drawMap/player1rightX_5 has been replicated 1 time(s)
+FlipFlop drawMap/player1topY_0 has been replicated 2 time(s)
+FlipFlop drawMap/player1topY_1 has been replicated 2 time(s)
+FlipFlop drawMap/player1topY_10 has been replicated 1 time(s)
+FlipFlop drawMap/player1topY_2 has been replicated 1 time(s)
+FlipFlop drawMap/player1topY_3 has been replicated 2 time(s)
+FlipFlop drawMap/player1topY_4 has been replicated 1 time(s)
+FlipFlop drawMap/player1topY_5 has been replicated 2 time(s)
+FlipFlop drawMap/player1topY_6 has been replicated 2 time(s)
+FlipFlop drawMap/player1topY_7 has been replicated 2 time(s)
+FlipFlop drawMap/player1topY_8 has been replicated 2 time(s)
+FlipFlop drawMap/player1topY_9 has been replicated 1 time(s)
+FlipFlop drawMap/player2bottomY_10 has been replicated 1 time(s)
+FlipFlop drawMap/player2bottomY_2 has been replicated 2 time(s)
+FlipFlop drawMap/player2bottomY_3 has been replicated 2 time(s)
+FlipFlop drawMap/player2bottomY_4 has been replicated 3 time(s)
+FlipFlop drawMap/player2bottomY_5 has been replicated 2 time(s)
+FlipFlop drawMap/player2bottomY_6 has been replicated 2 time(s)
+FlipFlop drawMap/player2bottomY_7 has been replicated 2 time(s)
+FlipFlop drawMap/player2bottomY_8 has been replicated 2 time(s)
+FlipFlop drawMap/player2bottomY_9 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_0 has been replicated 1 time(s)
+FlipFlop drawMap/player2leftX_1 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_10 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_2 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_3 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_4 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_5 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_6 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_7 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_8 has been replicated 2 time(s)
+FlipFlop drawMap/player2leftX_9 has been replicated 2 time(s)
+FlipFlop drawMap/player2rightX_10 has been replicated 2 time(s)
+FlipFlop drawMap/player2rightX_2 has been replicated 1 time(s)
+FlipFlop drawMap/player2rightX_3 has been replicated 2 time(s)
+FlipFlop drawMap/player2rightX_4 has been replicated 2 time(s)
+FlipFlop drawMap/player2rightX_5 has been replicated 2 time(s)
+FlipFlop drawMap/player2rightX_6 has been replicated 1 time(s)
+FlipFlop drawMap/player2rightX_7 has been replicated 2 time(s)
+FlipFlop drawMap/player2rightX_8 has been replicated 1 time(s)
+FlipFlop drawMap/player2rightX_9 has been replicated 1 time(s)
+FlipFlop drawMap/player2topY_0 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_1 has been replicated 3 time(s)
+FlipFlop drawMap/player2topY_10 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_2 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_3 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_4 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_5 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_6 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_7 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_8 has been replicated 2 time(s)
+FlipFlop drawMap/player2topY_9 has been replicated 2 time(s)
+FlipFlop vga/pixelx_0 has been replicated 1 time(s)
+FlipFlop vga/pixelx_1 has been replicated 3 time(s)
+FlipFlop vga/pixelx_2 has been replicated 2 time(s)
+FlipFlop vga/pixelx_3 has been replicated 3 time(s)
+FlipFlop vga/pixelx_4 has been replicated 3 time(s)
+FlipFlop vga/pixelx_5 has been replicated 3 time(s)
+FlipFlop vga/pixelx_6 has been replicated 2 time(s)
+FlipFlop vga/pixelx_7 has been replicated 2 time(s)
+FlipFlop vga/pixelx_8 has been replicated 3 time(s)
+FlipFlop vga/pixelx_9 has been replicated 2 time(s)
+FlipFlop vga/pixely_0 has been replicated 2 time(s)
+FlipFlop vga/pixely_1 has been replicated 2 time(s)
+FlipFlop vga/pixely_2 has been replicated 2 time(s)
+FlipFlop vga/pixely_3 has been replicated 2 time(s)
+FlipFlop vga/pixely_4 has been replicated 4 time(s)
+FlipFlop vga/pixely_5 has been replicated 3 time(s)
+FlipFlop vga/pixely_6 has been replicated 2 time(s)
+FlipFlop vga/pixely_7 has been replicated 3 time(s)
+FlipFlop vga/pixely_8 has been replicated 2 time(s)
+FlipFlop vga/pixely_9 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 662
+ Flip-Flops                                            : 662
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : testDraw.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4288
+#      GND                         : 1
+#      INV                         : 115
+#      LUT1                        : 127
+#      LUT2                        : 320
+#      LUT3                        : 324
+#      LUT4                        : 716
+#      LUT5                        : 432
+#      LUT6                        : 1427
+#      MUXCY                       : 504
+#      MUXF7                       : 70
+#      VCC                         : 1
+#      XORCY                       : 251
+# FlipFlops/Latches                : 668
+#      FD                          : 47
+#      FDE                         : 232
+#      FDR                         : 124
+#      FDR_1                       : 14
+#      FDRE                        : 119
+#      FDRE_1                      : 124
+#      FDSE_1                      : 2
+#      LD                          : 6
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 20
+#      IBUF                        : 3
+#      IBUFG                       : 1
+#      OBUF                        : 16
+# Others                           : 1
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             668  out of  18224     3%  
+ Number of Slice LUTs:                 3461  out of   9112    37%  
+    Number used as Logic:              3461  out of   9112    37%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3616
+   Number with an unused Flip Flop:    2948  out of   3616    81%  
+   Number with an unused LUT:           155  out of   3616     4%  
+   Number of fully used LUT-FF pairs:   513  out of   3616    14%  
+   Number of unique control sets:        43
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  20  out of    232     8%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------+-------------------------+-------+
+Clock Signal                                                    | Clock buffer(FF name)   | Load  |
+----------------------------------------------------------------+-------------------------+-------+
+clockdiv/pll_base_inst/CLKOUT1                                  | BUFG                    | 69    |
+clockdiv/pll_base_inst/CLKOUT0                                  | BUFG                    | 421   |
+PmodJSTK_Int1/SerialClock/CLKOUT                                | BUFG                    | 172   |
+js2/GND_16_o_PWR_20_o_OR_173_o(js2/GND_16_o_PWR_20_o_OR_173_o:O)| NONE(*)(js2/direction_2)| 2     |
+js2/direction_1_G(js2/direction_1_G:O)                          | NONE(*)(js2/direction_1)| 1     |
+js1/GND_16_o_PWR_20_o_OR_173_o(js1/GND_16_o_PWR_20_o_OR_173_o:O)| NONE(*)(js1/direction_2)| 2     |
+js1/direction_1_G(js1/direction_1_G:O)                          | NONE(*)(js1/direction_1)| 1     |
+----------------------------------------------------------------+-------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.556ns (Maximum Frequency: 104.652MHz)
+   Minimum input arrival time before clock: 5.494ns
+   Maximum output required time after clock: 5.877ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockdiv/pll_base_inst/CLKOUT1'
+  Clock period: 5.013ns (frequency: 199.465MHz)
+  Total number of paths / destination ports: 9579 / 101
+-------------------------------------------------------------------------
+Delay:               5.013ns (Levels of Logic = 30)
+  Source:            seconds/dividerSec_21 (FF)
+  Destination:       seconds/dividerSec_26 (FF)
+  Source Clock:      clockdiv/pll_base_inst/CLKOUT1 rising
+  Destination Clock: clockdiv/pll_base_inst/CLKOUT1 rising
+
+  Data Path: seconds/dividerSec_21 to seconds/dividerSec_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  seconds/dividerSec_21 (seconds/dividerSec_21)
+     LUT6:I0->O            2   0.203   0.961  seconds/dividerSec[26]_PWR_21_o_equal_2_o<26>1 (seconds/dividerSec[26]_PWR_21_o_equal_2_o<26>)
+     LUT5:I0->O           15   0.203   1.086  seconds/dividerSec[26]_PWR_21_o_equal_2_o<26>6 (seconds/dividerSec[26]_PWR_21_o_equal_2_o)
+     LUT3:I1->O            1   0.203   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_lut<0> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<0> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<1> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<2> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<3> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<4> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<5> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<6> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<7> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<8> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<9> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<10> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<11> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<12> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<13> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<14> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<15> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<16> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<17> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<18> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<19> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<20> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<21> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<22> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<23> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<24> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<24>)
+     MUXCY:CI->O           0   0.019   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<25> (seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_cy<25>)
+     XORCY:CI->O           1   0.180   0.000  seconds/Madd_dividerSec[26]_GND_20_o_add_9_OUT_xor<26> (seconds/dividerSec[26]_GND_20_o_add_9_OUT<26>)
+     FD:D                      0.102          seconds/dividerSec_26
+    ----------------------------------------
+    Total                      5.013ns (1.985ns logic, 3.028ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockdiv/pll_base_inst/CLKOUT0'
+  Clock period: 9.556ns (frequency: 104.652MHz)
+  Total number of paths / destination ports: 1099605 / 912
+-------------------------------------------------------------------------
+Delay:               9.556ns (Levels of Logic = 9)
+  Source:            drawMap/player2bottomY_2_1 (FF)
+  Destination:       drawMap/player2leftX_4 (FF)
+  Source Clock:      clockdiv/pll_base_inst/CLKOUT0 rising
+  Destination Clock: clockdiv/pll_base_inst/CLKOUT0 rising
+
+  Data Path: drawMap/player2bottomY_2_1 to drawMap/player2leftX_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.808  drawMap/player2bottomY_2_1 (drawMap/player2bottomY_2_1)
+     LUT3:I0->O            7   0.205   0.774  drawMap/p2w3/topy[10]_bullet[43]_LessThan_13_o21 (drawMap/p2w3/topy[10]_bullet[43]_LessThan_13_o2)
+     LUT6:I5->O            1   0.205   0.808  drawMap/p2w3/Mmux_collide11_SW0_SW0 (N561)
+     LUT6:I3->O            1   0.205   0.580  drawMap/p2w3/Mmux_collide11_SW0 (N140)
+     LUT6:I5->O            1   0.205   0.580  drawMap/p2w3/Mmux_collide11 (drawMap/p2w3/Mmux_collide11)
+     LUT6:I5->O            7   0.205   0.878  drawMap/collidep2w1_collidep2w7_AND_44_o20 (drawMap/collidep2w1_collidep2w7_AND_44_o20)
+     LUT5:I3->O            4   0.203   0.684  drawMap/collidep2w1_collidep2w7_AND_44_o29_1 (drawMap/collidep2w1_collidep2w7_AND_44_o29)
+     LUT6:I5->O           19   0.205   1.300  drawMap/Mmux_player2leftX[10]_player2leftX[10]_mux_336_OUT1223 (drawMap/Mmux_player2leftX[10]_player2leftX[10]_mux_336_OUT122)
+     LUT6:I3->O            3   0.205   0.755  drawMap/Mmux_player2leftX[10]_player2leftX[10]_mux_336_OUT184 (drawMap/player2leftX[10]_player2leftX[10]_mux_336_OUT<4>)
+     LUT3:I1->O            1   0.203   0.000  drawMap/player2leftX_4_dpot (drawMap/player2leftX_4_dpot)
+     FDE:D                     0.102          drawMap/player2leftX_4
+    ----------------------------------------
+    Total                      9.556ns (2.390ns logic, 7.165ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PmodJSTK_Int1/SerialClock/CLKOUT'
+  Clock period: 5.721ns (frequency: 174.795MHz)
+  Total number of paths / destination ports: 812 / 322
+-------------------------------------------------------------------------
+Delay:               2.860ns (Levels of Logic = 1)
+  Source:            PmodJSTK_Int1/SPI_Int/pState_FSM_FFd1 (FF)
+  Destination:       PmodJSTK_Int1/SPI_Int/rSR_7 (FF)
+  Source Clock:      PmodJSTK_Int1/SerialClock/CLKOUT falling
+  Destination Clock: PmodJSTK_Int1/SerialClock/CLKOUT rising
+
+  Data Path: PmodJSTK_Int1/SPI_Int/pState_FSM_FFd1 to PmodJSTK_Int1/SPI_Int/rSR_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q           10   0.447   1.085  PmodJSTK_Int1/SPI_Int/pState_FSM_FFd1 (PmodJSTK_Int1/SPI_Int/pState_FSM_FFd1)
+     LUT3:I0->O            8   0.205   0.802  PmodJSTK_Int1/SPI_Int/_n0070_inv1 (PmodJSTK_Int1/SPI_Int/_n0070_inv)
+     FDRE:CE                   0.322          PmodJSTK_Int1/SPI_Int/rSR_0
+    ----------------------------------------
+    Total                      2.860ns (0.974ns logic, 1.887ns route)
+                                       (34.0% logic, 66.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clockdiv/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 313 / 312
+-------------------------------------------------------------------------
+Offset:              5.494ns (Levels of Logic = 4)
+  Source:            RST (PAD)
+  Destination:       drawMap/player2leftX_10 (FF)
+  Destination Clock: clockdiv/pll_base_inst/CLKOUT0 rising
+
+  Data Path: RST to drawMap/player2leftX_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.995  RST_IBUF (RST_IBUF)
+     LUT5:I0->O           10   0.203   1.201  drawMap/reset_collidep1p2_OR_106_o21 (drawMap/reset_collidep1p2_OR_106_o)
+     LUT5:I0->O           37   0.203   1.363  drawMap/_n2870_inv2_rstpot (drawMap/_n2870_inv2_rstpot)
+     LUT3:I2->O            2   0.205   0.000  drawMap/player2leftX_1_dpot (drawMap/player2leftX_1_dpot)
+     FDE:D                     0.102          drawMap/player2leftX_1
+    ----------------------------------------
+    Total                      5.494ns (1.935ns logic, 3.559ns route)
+                                       (35.2% logic, 64.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PmodJSTK_Int1/SerialClock/CLKOUT'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            MISO1 (PAD)
+  Destination:       PmodJSTK_Int1/SPI_Int/rSR_0 (FF)
+  Destination Clock: PmodJSTK_Int1/SerialClock/CLKOUT rising
+
+  Data Path: MISO1 to PmodJSTK_Int1/SPI_Int/rSR_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  MISO1_IBUF (MISO1_IBUF)
+     FDRE:D                    0.102          PmodJSTK_Int1/SPI_Int/rSR_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockdiv/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 29 / 10
+-------------------------------------------------------------------------
+Offset:              5.877ns (Levels of Logic = 3)
+  Source:            vga/verticalCounter_4 (FF)
+  Destination:       vsync (PAD)
+  Source Clock:      clockdiv/pll_base_inst/CLKOUT0 rising
+
+  Data Path: vga/verticalCounter_4 to vsync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.447   1.221  vga/verticalCounter_4 (vga/verticalCounter_4)
+     LUT6:I0->O            3   0.203   0.651  vga/GND_11_o_verticalCounter[10]_LessThan_13_o111 (vga/GND_11_o_verticalCounter[10]_LessThan_13_o11)
+     LUT4:I3->O            1   0.205   0.579  vsync1 (vsync_OBUF)
+     OBUF:I->O                 2.571          vsync_OBUF (vsync)
+    ----------------------------------------
+    Total                      5.877ns (3.426ns logic, 2.451ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'PmodJSTK_Int1/SerialClock/CLKOUT'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.521ns (Levels of Logic = 2)
+  Source:            PmodJSTK_Int1/SPI_Int/CE (FF)
+  Destination:       SCLK1 (PAD)
+  Source Clock:      PmodJSTK_Int1/SerialClock/CLKOUT falling
+
+  Data Path: PmodJSTK_Int1/SPI_Int/CE to SCLK1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q            2   0.447   0.721  PmodJSTK_Int1/SPI_Int/CE (PmodJSTK_Int1/SPI_Int/CE)
+     LUT2:I0->O            1   0.203   0.579  PmodJSTK_Int1/SPI_Int/Mmux_SCLK11 (SCLK1_OBUF)
+     OBUF:I->O                 2.571          SCLK1_OBUF (SCLK1)
+    ----------------------------------------
+    Total                      4.521ns (3.221ns logic, 1.300ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockdiv/pll_base_inst/CLKOUT1'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.453ns (Levels of Logic = 2)
+  Source:            PmodJSTK_Int1/SerialClock/CLKOUT (FF)
+  Destination:       SCLK1 (PAD)
+  Source Clock:      clockdiv/pll_base_inst/CLKOUT1 rising
+
+  Data Path: PmodJSTK_Int1/SerialClock/CLKOUT to SCLK1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.651  PmodJSTK_Int1/SerialClock/CLKOUT (PmodJSTK_Int1/SerialClock/CLKOUT)
+     LUT2:I1->O            1   0.205   0.579  PmodJSTK_Int1/SPI_Int/Mmux_SCLK11 (SCLK1_OBUF)
+     OBUF:I->O                 2.571          SCLK1_OBUF (SCLK1)
+    ----------------------------------------
+    Total                      4.453ns (3.223ns logic, 1.230ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PmodJSTK_Int1/SerialClock/CLKOUT
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PmodJSTK_Int1/SerialClock/CLKOUT|    1.165|    2.860|    3.927|         |
+clockdiv/pll_base_inst/CLKOUT1  |         |         |    1.697|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clockdiv/pll_base_inst/CLKOUT0
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PmodJSTK_Int1/SerialClock/CLKOUT|         |    6.781|         |         |
+clockdiv/pll_base_inst/CLKOUT0  |    9.556|         |         |         |
+clockdiv/pll_base_inst/CLKOUT1  |    6.843|         |         |         |
+js1/GND_16_o_PWR_20_o_OR_173_o  |         |    7.968|         |         |
+js1/direction_1_G               |         |    7.926|         |         |
+js2/GND_16_o_PWR_20_o_OR_173_o  |         |    8.108|         |         |
+js2/direction_1_G               |         |    8.089|         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clockdiv/pll_base_inst/CLKOUT1
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+clockdiv/pll_base_inst/CLKOUT0|    2.924|         |         |         |
+clockdiv/pll_base_inst/CLKOUT1|    5.013|         |         |         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock js1/GND_16_o_PWR_20_o_OR_173_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PmodJSTK_Int1/SerialClock/CLKOUT|         |         |    6.664|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock js1/direction_1_G
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PmodJSTK_Int1/SerialClock/CLKOUT|         |         |    7.831|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock js2/GND_16_o_PWR_20_o_OR_173_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PmodJSTK_Int1/SerialClock/CLKOUT|         |         |    6.664|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock js2/direction_1_G
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+PmodJSTK_Int1/SerialClock/CLKOUT|         |         |    7.831|         |
+--------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 58.00 secs
+Total CPU time to Xst completion: 57.50 secs
+ 
+--> 
+
+Total memory usage is 350732 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  306 (   0 filtered)
+Number of infos    :   38 (   0 filtered)
+

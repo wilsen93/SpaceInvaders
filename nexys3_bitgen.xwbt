@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\TEMP.CS152A-01\Desktop\Tempfolder\spaceivaders\nexys3.ncd
+OUTFILE=C:\Users\TEMP.CS152A-01\Desktop\Tempfolder\spaceivaders\nexys3.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\TEMP.CS152A-01\Desktop\Tempfolder\spaceivaders
+LICENSE=ISE
+USER_INFO=203015155_203016297_210565169_127

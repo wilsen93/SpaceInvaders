@@ -1,0 +1,2 @@
+verilog work ../../clk_divider.v
+verilog work ../example_design/clk_divider_exdes.v

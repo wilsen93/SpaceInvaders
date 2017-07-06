@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue May 31 11:21:53 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SS1" LOCATE = SITE "T12" LEVEL 1;
+COMP "SS2" LOCATE = SITE "H3" LEVEL 1;
+COMP "RST" LOCATE = SITE "B8" LEVEL 1;
+COMP "MISO1" LOCATE = SITE "N10" LEVEL 1;
+COMP "MISO2" LOCATE = SITE "K6" LEVEL 1;
+COMP "SCLK1" LOCATE = SITE "P11" LEVEL 1;
+COMP "SCLK2" LOCATE = SITE "G3" LEVEL 1;
+COMP "MOSI1" LOCATE = SITE "V12" LEVEL 1;
+COMP "MOSI2" LOCATE = SITE "L7" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "SW<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "masterclk" LOCATE = SITE "V10" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+SCHEMATIC END;
+

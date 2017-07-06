@@ -1,0 +1,316 @@
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim testDraw.ngc testDraw_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "E:/spaceivaders/testDraw.xst" -ofn "E:/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/spaceivaders/testDraw.xst" -ofn "C:/Users/152/Desktop/spaceivaders/testDraw.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc nexys3.ucf -p xc6slx16-csg324-3 testDraw.ngc testDraw.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testDraw_map.ncd testDraw.ngd testDraw.pcf 
+par -w -intstyle ise -ol high -mt off testDraw_map.ncd testDraw.ncd testDraw.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf -ucf nexys3.ucf 
+bitgen -intstyle ise -f testDraw.ut testDraw.ncd 

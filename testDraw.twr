@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml testDraw.twx testDraw.ncd -o testDraw.twr testDraw.pcf
+-ucf nexys3.ucf
+
+Design file:              testDraw.ncd
+Physical constraint file: testDraw.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock masterclk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RST         |    8.117(R)|      SLOW  |   -2.804(R)|      FAST  |vgaclk            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock masterclk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+SCLK1       |         8.429(R)|      SLOW  |         5.141(R)|      FAST  |clk               |   0.000|
+SCLK2       |         7.826(R)|      SLOW  |         4.770(R)|      FAST  |clk               |   0.000|
+blue<0>     |         7.285(R)|      SLOW  |         4.309(R)|      FAST  |vgaclk            |   0.000|
+blue<1>     |         7.071(R)|      SLOW  |         4.262(R)|      FAST  |vgaclk            |   0.000|
+green<0>    |         7.292(R)|      SLOW  |         4.429(R)|      FAST  |vgaclk            |   0.000|
+green<1>    |         7.351(R)|      SLOW  |         4.314(R)|      FAST  |vgaclk            |   0.000|
+green<2>    |         7.687(R)|      SLOW  |         4.660(R)|      FAST  |vgaclk            |   0.000|
+hsync       |         7.104(R)|      SLOW  |         4.101(R)|      FAST  |vgaclk            |   0.000|
+red<0>      |         7.444(R)|      SLOW  |         4.161(R)|      FAST  |vgaclk            |   0.000|
+red<1>      |         7.241(R)|      SLOW  |         4.143(R)|      FAST  |vgaclk            |   0.000|
+red<2>      |         7.372(R)|      SLOW  |         4.264(R)|      FAST  |vgaclk            |   0.000|
+vsync       |         9.949(R)|      SLOW  |         4.903(R)|      FAST  |vgaclk            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock masterclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+masterclk      |    9.378|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue May 31 11:22:36 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 267 MB
+
+
+
